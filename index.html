@@ -1,18 +1,101 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pokemon</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <img src="http://i.imgur.com/oJkBNgX.jpg" alt="" class="cintillo">
+    </div>
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <!-- para ordenar -->
+                Ordenar
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" id="az">A - Z</a>
+                <a class="dropdown-item" href="#" id="za">Z - A</a>
+                <a class="dropdown-item" href="#" id="idasc">Id Asc</a>
+                <a class="dropdown-item" href="#" id="iddesc">Id Desc</a>
+
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <select class="form-control" id="type">
+                <option value="all" href="#"><strong>Tipos de Pokemon</strong></option>
+                <option value="Grass" href="#">Grass</option>
+                <option value="Poison" href="#">Poison</option>
+                <option value="Fire" href="#">Fire</option>
+                <option value="Flying" href="#">Flying</option>
+                <option value="Water" href="#">Water</option>
+                <option value="Bug" href="#">Bug</option>
+                <option value="Normal" href="#">Normal</option>
+                <option value="Electric" href="#">Electric</option>
+                <option value="Psychic" href="#">Psychic</option>
+                <option value="Fighting" href="#">Fighting</option>
+                <option value="Rock" href="#">Rock</option>
+                <option value="Ice" href="#">Ice</option>
+                <option value="Dragon" href="#">Dragon</option>
+                <option value="Ground" href="#">Ground</option>
+                <option value="Ghost" href="#">Ghost</option>
+
+
+              </select>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Grafico">Estadisticas</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="container">
+    <div class="row" id="lista">
+    </div>
+
+  </section>
+  <div id="Grafico" style="width: 75%;">
+    <canvas id="myChartPokemon"></canvas>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="./data/pokemon/pokemon.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col">&copy;Copyright 2019, Pokemon</div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
