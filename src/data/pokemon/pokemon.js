@@ -4084,4 +4084,6 @@ const POKEMON = {
     ]
   }]
 }
+window.pokemon = POKEMON;
 ;;
+
