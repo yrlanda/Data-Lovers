@@ -13,16 +13,16 @@ const orderData = (data, criteria) => {
 
   let ordered = [];
 
-  if (criteria == 'az') {
+  if (criteria === 'az') {
     ordered = data.sort(orderByName);
   }
   if (criteria === 'za') {
     ordered = data.sort(orderByName).reverse();
   }
-  if (criteria == 'idasc') {
+  if (criteria === 'idasc') {
     ordered = data.sort(orderById);
   }
-  if (criteria == 'iddesc') {
+  if (criteria === 'iddesc') {
     ordered = data.sort(orderById).reverse();
   }
 
