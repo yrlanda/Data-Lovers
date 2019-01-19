@@ -6,14 +6,6 @@ body {
   width: 100%;
   height: 150px;
 }
-.container-fluid {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-end;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
-  
   .card {
     width: 17%;
     margin: 1em;
@@ -61,4 +53,7 @@ body {
   }
   .card .box span {
     display: inline-flex;
+  }
+  .menu {
+    background-color: #6AE5FC;
   }
