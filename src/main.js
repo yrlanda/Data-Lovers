@@ -61,8 +61,8 @@ window.onload = () => {
     drawCards(filtered);
   })
 
-  var ctx = document.getElementById('myChartPokemon').getContext('2d');
-    var chart = new Chart(ctx, {
+  let ctx = document.getElementById('myChartPokemon').getContext('2d');
+    new window.Chart(ctx, {
         // The type of chart we want to create
         type: 'horizontalBar',
     
@@ -70,7 +70,7 @@ window.onload = () => {
         data: {
             labels: ['Bug', "Dragon", "Electric", "Fighting", "Fire", "Flying", "Ghost","Grass","Ground","Ice","Normal","Poison","Psychic","Rock","Water"],
             datasets: [{
-                label: "My First dataset",
+                label: "Cantidad de Pokemones",
                 backgroundColor: ['#f9d770','#FF4D00','#484A4E','#6A8FB7','#FFCE00','#8F94E3','#E8E9E3','#278B08','#907830','#3FD0D4','#FF0198','#330F1C','#1aa0dd','#1aa0dd','#1aa0dd','#1aa0dd'],
                 data: [
                     type_counts.Bug,
